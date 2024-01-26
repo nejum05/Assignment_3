@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hockey</title>
+    <!--font manrope-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/758f5aab01.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-manrope">
+    <header>
+        <!--nav bar-->
+        <div class="flex place-content-evenly">
+            <nav>
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                      <a class="btn btn-ghost text-4xl mr-48 font-extrabold">Hockey<span class="text-red-500">’</span>s</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1 text-base">
+                        <li class="text-red-500"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end ml-52">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_5_6)">
+                              <path d="M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M21 21L15 15" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_5_6">
+                                <rect width="24" height="24" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                      <a class="btn bg-red-500 ml-5 text-[#FFF] text-xl">Get Ticket</a>
+                    </div>
+                  </div>
+            </nav>
+        </div>
+<!--banner-->
+        <div class="flex justify-center mt-8">
+            <div class="carousel w-4/5">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                </div>
+              </div>
+              <div class="lg:absolute lg:bottom-20 lg:right-60 bg-black rounded-lg  p-8 w-3/4  lg:mt-0  lg:h-30 lg:w-2/5">
+              <h3 class="text-white font-extrabold">Meet all the heroes from the field</h3>
+              <p class="text-white opacity-40 font-normal text-base">They are more valiant, struggling, hard working. Hockey is their passion and also ambition now.</p>
+              </div>
+        </div>
+    </header>
+    <main>
+<!--section1-->
+<section class="mt-32">
+    <div class="text-center">
+        <h3 class="text-black text-3xl font-extrabold mb-6">Professional Hockeys Club</h3>
+        <p class="text-[#RRGGBBAA]">Ice hockey, a fast-paced and thrilling sport, captivates fans around the world.<br> At the pinnacle of this intense competition are the professional hockey clubs</p>
+    </div>
+    <div class="flex place-content-evenly mt-20 items-center">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                <path d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z" fill="#E7E7E8"/>
+                <path d="M114.266 60C117.433 60 120.028 57.4265 119.726 54.2739C118.63 42.8387 114.268 31.914 107.102 22.8328C98.7478 12.2455 87.0702 4.78141 73.9534 1.64503C60.8366 -1.49135 47.0457 -0.117159 34.8058 5.54589C22.5658 11.2089 12.5907 20.8306 6.48991 32.8583C0.389129 44.8861 -1.48153 58.6185 1.17978 71.8398C3.84108 85.0612 10.8791 97.0004 21.1583 105.731C31.4376 114.462 44.3584 119.475 57.8362 119.961C69.3965 120.378 80.7882 117.444 90.6624 111.574C93.3847 109.955 93.9276 106.34 92.0567 103.785C90.1858 101.229 86.611 100.708 83.8529 102.265C76.0892 106.646 67.2324 108.824 58.2498 108.499C47.3483 108.106 36.8973 104.051 28.5829 96.9895C20.2686 89.9277 14.5759 80.2707 12.4233 69.5766C10.2707 58.8826 11.7837 47.7751 16.7184 38.0465C21.653 28.3178 29.7213 20.5354 39.6216 15.9548C49.5219 11.3742 60.6767 10.2627 71.2862 12.7996C81.8957 15.3364 91.3411 21.3737 98.0985 29.9373C103.666 36.9936 107.142 45.426 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z" fill="#FF4240"/>
+              </svg>
+              <p>87%</p>
+              <div class="text-center">
+                <h3 class="font-semibold text-xl">Prayer Facility</h3>
+              <p class="text-[#RRGGBBAA]">Amet consectetur Condimentum <br>dignissim adipiscing .</p>
+              </div>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                <path d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z" fill="#E7E7E8"/>
+                <path d="M114.266 60C117.433 60 120.028 57.4266 119.726 54.274C118.506 41.5436 113.241 29.4793 104.626 19.8933C94.7273 8.87961 81.1057 1.91535 66.3817 0.340346C51.6576 -1.23466 36.8712 2.69086 24.8672 11.3617C12.8632 20.0325 4.48966 32.836 1.35752 47.3091C-1.77461 61.7821 0.55594 76.9021 7.90081 89.7603C15.2457 102.618 27.086 112.306 41.1438 116.96C55.2016 121.614 70.4837 120.905 84.0501 114.969C95.858 109.803 105.64 100.995 112.015 89.9081C113.593 87.1625 112.294 83.7461 109.41 82.4366C106.526 81.1272 103.155 82.426 101.515 85.1352C96.3546 93.6587 88.6662 100.431 79.4529 104.462C68.4798 109.263 56.1188 109.836 44.7481 106.072C33.3775 102.308 23.8005 94.4719 17.8596 84.0716C11.9187 73.6713 10.0336 61.4414 12.567 49.7349C15.1005 38.0284 21.8734 27.6723 31.5828 20.6589C41.2923 13.6455 53.2523 10.4704 65.1618 11.7443C77.0714 13.0182 88.0892 18.6513 96.0955 27.5597C102.818 35.0393 107.018 44.3841 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z" fill="#49D293"/>
+              </svg>
+              <p>95%</p>
+              <div class="text-center">
+                <h3 class="font-semibold text-xl">Experienced Coach</h3>
+              <p class="text-[#RRGGBBAA]">Amet consectetur.<br> Condimentum dignissim adipiscing .</p>
+              </div>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                <path d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z" fill="#E7E7E8"/>
+                <path d="M110.134 80.7677C113.06 81.9797 116.443 80.5956 117.371 77.5673C120.973 65.8033 120.885 53.165 117.038 41.3814C112.596 27.7733 103.435 16.2017 91.2094 8.75578C78.9837 1.30986 64.4986 -1.51971 50.3695 0.777937C36.2403 3.07558 23.3982 10.349 14.1616 21.2851C4.92507 32.2212 -0.0972474 46.0992 0.00142546 60.4136C0.100098 74.728 5.31326 88.5355 14.6997 99.3431C24.0862 110.151 37.0273 117.247 51.1868 119.349C63.4479 121.17 75.9229 119.143 86.9184 113.623C89.7488 112.202 90.5474 108.635 88.8628 105.953C87.1783 103.271 83.6496 102.497 80.7878 103.854C72.1379 107.954 62.4244 109.423 52.8714 108.005C41.4186 106.304 30.9511 100.565 23.3589 91.8227C15.7666 83.0809 11.55 71.9127 11.4702 60.3345C11.3903 48.7563 15.4526 37.5311 22.9236 28.6854C30.3946 19.8398 40.782 13.9567 52.2103 12.0982C63.6387 10.2398 75.3549 12.5285 85.2438 18.5511C95.1326 24.5737 102.542 33.9334 106.135 44.9403C109.132 54.1213 109.309 63.9437 106.713 73.1577C105.855 76.2061 107.208 79.5556 110.134 80.7677Z" fill="#FFB546"/>
+              </svg> 
+              <p>90%</p>
+              <div class="text-center">
+                <h3 class="font-semibold text-xl">Senior Player</h3>
+              <p class="text-[#RRGGBBAA]">Amet consectetur.<br> Condimentum dignissim adipiscing .</p>
+              </div>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                <path d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z" fill="#E7E7E8"/>
+                <path d="M114.266 60C117.433 60 120.028 57.4265 119.726 54.2739C118.63 42.8387 114.268 31.914 107.102 22.8328C98.7478 12.2455 87.0702 4.78141 73.9534 1.64503C60.8366 -1.49135 47.0457 -0.117159 34.8058 5.54589C22.5658 11.2089 12.5907 20.8306 6.48991 32.8583C0.389129 44.8861 -1.48153 58.6185 1.17978 71.8398C3.84108 85.0612 10.8791 97.0004 21.1583 105.731C31.4376 114.462 44.3584 119.475 57.8362 119.961C69.3965 120.378 80.7882 117.444 90.6624 111.574C93.3847 109.955 93.9276 106.34 92.0567 103.785C90.1858 101.229 86.611 100.708 83.8529 102.265C76.0892 106.646 67.2324 108.824 58.2498 108.499C47.3483 108.106 36.8973 104.051 28.5829 96.9895C20.2686 89.9277 14.5759 80.2707 12.4233 69.5766C10.2707 58.8826 11.7837 47.7751 16.7184 38.0465C21.653 28.3178 29.7213 20.5354 39.6216 15.9548C49.5219 11.3742 60.6767 10.2627 71.2862 12.7996C81.8957 15.3364 91.3411 21.3737 98.0985 29.9373C103.666 36.9936 107.142 45.426 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z" fill="#4C8DF1"/>
+              </svg>
+              <p>80%</p>
+              <div class="text-center">
+                <h3 class="font-semibold text-xl">Training Ground</h3>
+              <p class="text-[#RRGGBBAA]">Amet consectetur.<br> Condimentum dignissim adipiscing .</p>
+        </div>
+        </div>
+    </div>
+</section>
+<!--section2-->
+<section class="mt-32">
+    <div class="text-center">
+        <h3 class="text-black text-3xl font-extrabold mb-6">Program Sections</h3>
+        <p class="text-[#RRGGBBAA]">Ice hockey, a fast-paced and thrilling sport, captivates fans around the world.<br> At the pinnacle of this intense competition are the professional hockey clubs</p>
+    </div>
+    <div class="flex place-content-evenly gap-10 mt-20 mr-32 ml-32 mb-10">
+        <div class="card w-9/12 bg-base-100 shadow-xl image-full">
+            <figure><img src="Images/2.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title mt-20 pl-5">Junior Program</h2>
+              <p class="pt-3 pl-5">Across the Atlantic, the KHL reigns supreme in Eurasia. Teams like CSKA Moscow, SKA Saint Petersburg, and Jokerit Helsinki showcase the high skill level and intensity of the </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary  bg-red-500 mr-80 text-[#FFF] text-xl">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-9/12 bg-base-100 shadow-xl image-full">
+            <figure><img class="w-full" src="Images/3.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title mt-20 pl-5">Junior Program</h2>
+              <p class="pt-3 pl-5">Across the Atlantic, the KHL reigns supreme in Eurasia. Teams like CSKA Moscow, SKA Saint Petersburg, and Jokerit Helsinki showcase the high skill level and intensity of the </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary  bg-red-500 mr-80 text-[#FFF] text-xl">Register Now!</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="mr-32 ml-32 card bg-base-100 shadow-xl image-full">
+        <figure><img class="w-full" src="Images/4.png" alt="Shoes" /></figure>
+        <div class="card-body mt-52">
+          <h2 class="card-title">Junior Program</h2>
+          <p class="">Across the Atlantic, <br>the KHL reigns supreme in Eurasia. Teams like CSKA Moscow,<br> SKA Saint Petersburg, and Jokerit Helsinki showcase the high skill level and intensity of the </p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary bg-red-500 text-[#FFF] text-xl">Register Now!</button>
+          </div>
+        </div>
+      </div>
+</section>
+<!--section3-->
+<section class="mt-32 mx-32">
+    <div class="text-center">
+        <h3 class="text-black text-3xl font-extrabold mb-6">Our New Products Club</h3>
+        <p class="text-[#RRGGBBAA]">Ice hockey, a fast-paced and thrilling sport, captivates fans around the world.<br> At the pinnacle of this intense competition are the professional hockey clubs</p>
+    </div>
+    <div class="m-20 grid grid-cols-1 lg:grid-cols-2 gap-7 mx-auto">
+        <div class="flex flex-col justify-center">
+            <div
+                class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+                <div class="w-full md:w-1/3 bg-white grid place-items-center">
+                    <img src="Images/5.png" />
+            </div>
+                    <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
+                        <div class="flex justify-between item-center">
+                            <p class="text-gray-500 font-medium hidden md:block">Vacations</p>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <p class="text-gray-600 font-bold text-sm ml-1">
+                                    4.96
+                                    <span class="text-gray-500 font-normal">(76 reviews)</span>
+                                </p>
+                            </div>
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="font-black text-gray-800 md:text-3xl text-xl">World Cup Flags Football</h3>
+                        <p class="md:text-lg text-gray-500 text-base">The best kept secret of The Bahamas is the country’s sheer
+                            size and diversity. With 16 major islands, The Bahamas is an unmatched destination</p>
+                        <p class="text-xl font-black text-red-500">
+                            price:$110
+                            <span class="font-normal text-gray-600 text-base">Delivary fee:free</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <div class="flex flex-col justify-center">
+                <div
+                    class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+                    <div class="w-full md:w-1/3 bg-white grid place-items-center">
+                        <img src="Images/6.png" />
+                </div>
+                        <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
+                            <div class="flex justify-between item-center">
+                                <p class="text-gray-500 font-medium hidden md:block">Vacations</p>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <p class="text-gray-600 font-bold text-sm ml-1">
+                                        4.96
+                                        <span class="text-gray-500 font-normal">(76 reviews)</span>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="font-black text-gray-800 md:text-3xl text-xl">World Cup Flags Football</h3>
+                            <p class="md:text-lg text-gray-500 text-base">The best kept secret of The Bahamas is the country’s sheer
+                                size and diversity. With 16 major islands, The Bahamas is an unmatched destination</p>
+                            <p class="text-xl font-black text-red-500">
+                                price:$110
+                                <span class="font-normal text-gray-600 text-base">Delivary fee:free</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        <div class="flex flex-col justify-center">
+                    <div
+                        class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+                        <div class="w-full md:w-1/3 bg-white grid place-items-center">
+                            <img src="Images/7.png" />
+                    </div>
+                            <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
+                                <div class="flex justify-between item-center">
+                                    <p class="text-gray-500 font-medium hidden md:block">Vacations</p>
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <p class="text-gray-600 font-bold text-sm ml-1">
+                                            4.96
+                                            <span class="text-gray-500 font-normal">(76 reviews)</span>
+                                        </p>
+                                    </div>
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <h3 class="font-black text-gray-800 md:text-3xl text-xl">World Cup Flags Football</h3>
+                                <p class="md:text-lg text-gray-500 text-base">The best kept secret of The Bahamas is the country’s sheer
+                                    size and diversity. With 16 major islands, The Bahamas is an unmatched destination</p>
+                                <p class="text-xl font-black text-red-500">
+                                    price:$110
+                                    <span class="font-normal text-gray-600 text-base">Delivary fee:free</span>
+                                </p>
+                            </div>
+                        </div>
+        </div>
+        <div class="flex flex-col justify-center">
+                        <div
+                            class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+                            <div class="w-full md:w-1/3 bg-white grid place-items-center">
+                                <img src="Images/8.png" />
+                        </div>
+                                <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
+                                    <div class="flex justify-between item-center">
+                                        <p class="text-gray-500 font-medium hidden md:block">Vacations</p>
+                                        <div class="flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+                                            <p class="text-gray-600 font-bold text-sm ml-1">
+                                                4.96
+                                                <span class="text-gray-500 font-normal">(76 reviews)</span>
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                                fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h3 class="font-black text-gray-800 md:text-3xl text-xl">World Cup Flags Football</h3>
+                                    <p class="md:text-lg text-gray-500 text-base">The best kept secret of The Bahamas is the country’s sheer
+                                        size and diversity. With 16 major islands, The Bahamas is an unmatched destination</p>
+                                    <p class="text-xl font-black text-red-500">
+                                        price:$110
+                                        <span class="font-normal text-gray-600 text-base">Delivary fee:free</span>
+                                    </p>
+                                </div>
+                            </div>
+        </div>
+        <div class="flex flex-col justify-center">
+            <div
+                class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+                <div class="w-full md:w-1/3 bg-white grid place-items-center">
+                    <img src="Images/9.png" />
+            </div>
+                    <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
+                        <div class="flex justify-between item-center">
+                            <p class="text-gray-500 font-medium hidden md:block">Vacations</p>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <p class="text-gray-600 font-bold text-sm ml-1">
+                                    4.96
+                                    <span class="text-gray-500 font-normal">(76 reviews)</span>
+                                </p>
+                            </div>
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="font-black text-gray-800 md:text-3xl text-xl">World Cup Flags Football</h3>
+                        <p class="md:text-lg text-gray-500 text-base">The best kept secret of The Bahamas is the country’s sheer
+                            size and diversity. With 16 major islands, The Bahamas is an unmatched destination</p>
+                        <p class="text-xl font-black text-red-500">
+                            price:$110
+                            <span class="font-normal text-gray-600 text-base">Delivary fee:free</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <div class="flex flex-col justify-center">
+                <div
+                    class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+                    <div class="w-full md:w-1/3 bg-white grid place-items-center">
+                        <img src="Images/10.png" />
+                </div>
+                        <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
+                            <div class="flex justify-between item-center">
+                                <p class="text-gray-500 font-medium hidden md:block">Vacations</p>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <p class="text-gray-600 font-bold text-sm ml-1">
+                                        4.96
+                                        <span class="text-gray-500 font-normal">(76 reviews)</span>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="font-black text-gray-800 md:text-3xl text-xl">World Cup Flags Football</h3>
+                            <p class="md:text-lg text-gray-500 text-base">The best kept secret of The Bahamas is the country’s sheer
+                                size and diversity. With 16 major islands, The Bahamas is an unmatched destination</p>
+                            <p class="text-xl font-black text-red-500">
+                                price:$110
+                                <span class="font-normal text-gray-600 text-base">Delivary fee:free</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</section>
+<!--section4-->
+<section class="my-32">
+    <div class="text-center">
+        <h3 class="text-black text-3xl font-extrabold mb-6">Clients Question</h3>
+        <p class="text-[#RRGGBBAA]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>turpis placerat dolor. Purus urna in sit nullam proin. </p>
+    </div>
+    <div class="flex mt-20 justify-center gap-5">
+        <div><img src="Images/11.png" alt=""></div>
+        <div class="h-auto">
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content"> 
+                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content"> 
+                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content"> 
+                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content"> 
+                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content"> 
+                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+<!--section5-->
+<section class="my-32">
+    <div class="text-center">
+        <h3 class="text-black text-3xl font-extrabold mb-6">Get In Touch</h3>
+        <p class="text-[#RRGGBBAA]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>turpis placerat dolor. Purus urna in sit nullam proin. </p>
+    </div>
+    <div></div>
+</section>
+<!--section6-->
+<section class="text-center mb-12 mx-auto">
+  <h3 class="text-blacks font-extrabold text-4xl px-10">Get In Touch</h3>
+  <p class="text-base font-normal mt-5 mb-8 text-blacks opacity-80"> Here goes ways of contacting us. You can contact with us using the below ways very easily and quickly.</p>
+ <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mx-auto">
+  <div class="mx-auto" >
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <div class="card-body">
+        <div class="rounded-xl h-48 bg-[#BCED6D1A] ">
+          <div class="flex flex-col justify-start  px-10">
+            <img src="./Images/direct 1.png" alt="" width="40px" height="40px" class="pt-10 mb-6">
+            <p class="text-sm font-normal  text-blacks opacity-80 text-start">Phone Number : </p>
+            <p class="font-extrabold text-base mt-1 text-blacks text-start">(+62) 123-321-543</p>
+          </div>
+        </div>
+        <div class="rounded-xl h-48 bg-[#FDDD5F1A] ">
+          <div class="flex flex-col justify-start  px-10">
+            <img src="./Images/3d-accept 1.png" alt="" width="40px" height="40px" class="pt-10 mb-6">
+            <p class="text-sm font-normal  text-blacks opacity-80 text-start">Email : 
+             </p>
+            <p class="font-extrabold text-base mt-1 text-blacks text-start">  hockeys@support.com</p>
+          </div>
+        </div>
+        <div class="rounded-xl h-48 bg-[#629CF31A] ">
+          <div class="flex flex-col justify-start  px-10">
+            <img src="./Images/google-maps 1.png" alt="" width="40px" height="40px" class="pt-10 mb-6">
+            <p class="text-sm font-normal  text-blacks opacity-80 text-start">Location : 
+             </p>
+            <p class="font-extrabold text-base mt-1 text-blacks text-start"> 152/1 Mohakhali Wireless Gate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-2  w-full space-y-0 mx-auto ">
+   <div class="">
+    <h3 class="font-extrabold text-base text-blacks text-center">Your Name</h3>
+    <input type="text" name="" id="" placeholder="Enter Your Name" class="w-full rounded-lg border-blacks border-0 bg-opacity-5 bg-blackish p-4 text-blackish text-center text-sm">
+   </div>
+   <div>
+    <h3 class="font-extrabold text-base text-blacks text-center">Your Email</h3>
+    <input type="email" name="" id="" placeholder="Enter Your Email" class="w-full rounded-lg border-blacks border-0 bg-opacity-5 bg-blackish p-4 text-blackish text-center text-sm">
+   </div>
+   <div>
+    <h3 class="font-extrabold text-base text-blacks text-center">Subject</h3>
+    <input type="text" name="" id="" placeholder="Enter Your Subject" class="w-full rounded-lg border-blacks border-0 bg-opacity-5 bg-blackish p-4 text-blackish text-center text-sm">
+   </div>
+   <div>
+    <h3 class="font-extrabold text-base text-blacks text-center">Your Phone Number</h3>
+    <input type="tel" name="" id="" placeholder="Enter Your Phone Number" class="w-full rounded-lg border-blacks border-0 bg-opacity-5 bg-blackish p-4 text-blackish text-center text-sm">
+   </div>
+   <div class="col-span-2">
+    <h3 class="font-extrabold text-base text-blacks text-center">Your Message</h3>
+    <input type="textarea" name="" id="" placeholder="Enter Your Message" class="w-full rounded-lg border-blacks border-0 bg-opacity-5 bg-blackish p-4 text-blackish text-center text-sm h-48">
+   </div>
+   <div class="col-span-2">
+    <button class=" btn bg-secondary border-none inline-flex justify-center px-5  text-white text-center">Send Message</button>
+   </div>
+  </div>
+  </div>
+  <div class="rounded-xl h-48 bg-blackish bg-opacity-5 mt-5 mx-auto w-3/4">
+    <div class="flex flex-col justify-center items-center  px-10">
+     
+      <p class="text-xl font-extrabold  text-blacks opacity-80 text-center pt-16 pb-5">Social Media </p>
+      <div class="text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="175" height="24" viewBox="0 0 175 24" fill="none">
+        <path d="M19.8879 6.65563C19.1421 6.98551 18.3548 7.19169 17.5262 7.31539C18.3548 6.82057 19.0178 6.0371 19.3078 5.0887C18.5206 5.54228 17.6505 5.87216 16.6975 6.07834C15.9517 5.29487 14.8745 4.80005 13.7143 4.80005C11.4769 4.80005 9.6539 6.6144 9.6539 8.84109C9.6539 9.17097 9.69533 9.45962 9.7782 9.74827C6.42212 9.58333 3.39751 7.97516 1.36729 5.50105C1.03583 6.11957 0.828661 6.77934 0.828661 7.52157C0.828661 8.92356 1.53302 10.1606 2.65171 10.9029C1.98879 10.8616 1.36729 10.6967 0.787228 10.408V10.4493C0.787228 12.4286 2.19595 14.078 4.06044 14.4491C3.72897 14.5315 3.35608 14.5728 2.98318 14.5728C2.73458 14.5728 2.44455 14.5315 2.19595 14.4903C2.73458 16.0985 4.22617 17.2943 6.00779 17.2943C4.59907 18.3664 2.85888 19.0262 0.95296 19.0262C0.621495 19.0262 0.290031 19.0262 0 18.9849C1.82305 20.1395 3.93614 20.7993 6.25639 20.7993C13.7558 20.7993 17.8576 14.614 17.8576 9.25345C17.8576 9.0885 17.8576 8.88233 17.8576 8.71739C18.6449 8.18133 19.3492 7.48033 19.8879 6.65563Z" fill="#131318"/>
+        <path d="M55.2142 23.1658V13.3286H51.8879V9.49479H55.2142V6.6675C55.2142 3.38645 57.2278 1.59985 60.1687 1.59985C61.5775 1.59985 62.7882 1.70424 63.1411 1.75089V5.17978L61.1014 5.18071C59.5019 5.18071 59.1922 5.93712 59.1922 7.0471V9.49479H63.0068L62.5101 13.3286H59.1922V23.1658H55.2142Z" fill="#131318"/>
+        <path d="M107.198 2.16218C110.417 2.16218 110.799 2.17418 112.07 2.23189C112.835 2.24121 113.592 2.38094 114.309 2.64502C114.83 2.84463 115.302 3.15042 115.696 3.54269C116.09 3.93496 116.397 4.40502 116.598 4.92262C116.863 5.63637 117.004 6.39011 117.013 7.15109C117.07 8.41674 117.083 8.79615 117.083 12C117.083 15.2038 117.071 15.5833 117.013 16.8489C117.004 17.6099 116.863 18.3636 116.598 19.0774C116.397 19.595 116.09 20.065 115.696 20.4573C115.302 20.8496 114.83 21.1554 114.309 21.355C113.592 21.6191 112.835 21.7588 112.07 21.7681C110.799 21.8252 110.418 21.8378 107.198 21.8378C103.978 21.8378 103.597 21.8258 102.326 21.7681C101.561 21.7588 100.804 21.6191 100.087 21.355C99.5667 21.1554 99.0943 20.8496 98.7002 20.4573C98.306 20.065 97.9988 19.595 97.7982 19.0774C97.5329 18.3636 97.3925 17.6099 97.3831 16.8489C97.3257 15.5833 97.3131 15.2038 97.3131 12C97.3131 8.79615 97.3251 8.41674 97.3831 7.15109C97.3925 6.39011 97.5329 5.63637 97.7982 4.92262C97.9988 4.40502 98.306 3.93496 98.7002 3.54269C99.0943 3.15042 99.5667 2.84463 100.087 2.64502C100.804 2.38094 101.561 2.24121 102.326 2.23189C103.598 2.17475 103.979 2.16218 107.198 2.16218ZM107.198 0C103.925 0 103.513 0.0137136 102.227 0.0719965C101.226 0.0918058 100.236 0.280376 99.299 0.629684C98.4949 0.931193 97.7666 1.40368 97.1649 2.01419C96.5509 2.61323 96.0758 3.33847 95.7726 4.13923C95.4216 5.0721 95.2322 6.05745 95.2123 7.05338C95.1549 8.33217 95.1411 8.74244 95.1411 11.9994C95.1411 15.2564 95.1549 15.6667 95.2134 16.9466C95.2333 17.9425 95.4228 18.9279 95.7738 19.8608C96.0766 20.6614 96.5514 21.3867 97.1649 21.9858C97.767 22.5965 98.4957 23.069 99.3002 23.3703C100.238 23.7196 101.228 23.9082 102.228 23.928C103.514 23.9851 103.925 24 107.199 24C110.474 24 110.884 23.9863 112.17 23.928C113.171 23.9082 114.161 23.7196 115.098 23.3703C115.899 23.0614 116.626 22.5896 117.233 21.9851C117.84 21.3806 118.314 20.6567 118.624 19.8596C118.975 18.9268 119.164 17.9414 119.184 16.9455C119.241 15.6667 119.255 15.2564 119.255 11.9994C119.255 8.74244 119.241 8.33217 119.183 7.05224C119.163 6.05631 118.973 5.07096 118.622 4.13809C118.32 3.33743 117.845 2.6122 117.231 2.01305C116.629 1.4024 115.901 0.929903 115.096 0.628541C114.159 0.279233 113.169 0.0906631 112.168 0.0708538C110.883 0.0137137 110.471 0 107.198 0Z" fill="#131318"/>
+        <path d="M107.196 5.83789C105.971 5.83789 104.774 6.19929 103.756 6.87637C102.738 7.55346 101.944 8.51583 101.476 9.64179C101.007 10.7677 100.884 12.0067 101.123 13.202C101.362 14.3973 101.952 15.4953 102.818 16.3571C103.684 17.2188 104.787 17.8057 105.988 18.0435C107.189 18.2812 108.434 18.1592 109.565 17.6928C110.697 17.2264 111.664 16.4366 112.344 15.4233C113.024 14.41 113.387 13.2186 113.387 11.9999C113.387 10.3656 112.735 8.7983 111.574 7.6427C110.413 6.4871 108.838 5.83789 107.196 5.83789ZM107.196 15.9997C106.401 15.9997 105.624 15.7651 104.963 15.3256C104.302 14.8861 103.787 14.2614 103.483 13.5305C103.179 12.7997 103.099 11.9954 103.254 11.2196C103.409 10.4437 103.792 9.73097 104.354 9.17159C104.916 8.61221 105.632 8.23126 106.412 8.07693C107.191 7.9226 108 8.0018 108.734 8.30454C109.468 8.60728 110.096 9.11994 110.538 9.77771C110.979 10.4355 111.215 11.2088 111.215 11.9999C111.215 13.0607 110.791 14.0781 110.038 14.8282C109.284 15.5783 108.262 15.9997 107.196 15.9997Z" fill="#131318"/>
+        <path d="M113.633 7.03416C114.432 7.03416 115.08 6.38948 115.08 5.59423C115.08 4.79898 114.432 4.1543 113.633 4.1543C112.834 4.1543 112.186 4.79898 112.186 5.59423C112.186 6.38948 112.834 7.03416 113.633 7.03416Z" fill="#131318"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M162.788 0C156.397 0 151.255 5.11733 151.255 11.4781C151.255 16.5476 154.571 20.8519 159.136 22.3823C159.713 22.478 159.905 22.1432 159.905 21.8084C159.905 21.5215 159.905 20.8041 159.905 19.8476C156.685 20.565 156.013 18.3172 156.013 18.3172C155.484 16.9781 154.715 16.6433 154.715 16.6433C153.658 15.9259 154.811 15.9259 154.811 15.9259C155.964 16.0216 156.589 17.1215 156.589 17.1215C157.598 18.8911 159.28 18.365 159.953 18.0781C160.049 17.3128 160.337 16.8346 160.674 16.5476C158.127 16.2607 155.436 15.2563 155.436 10.8564C155.436 9.61293 155.868 8.56077 156.637 7.79556C156.541 7.50861 156.109 6.3608 156.733 4.73473C156.733 4.73473 157.694 4.44777 159.905 5.93037C160.818 5.69124 161.827 5.54776 162.788 5.54776C163.749 5.54776 164.759 5.69124 165.672 5.93037C167.882 4.44777 168.843 4.73473 168.843 4.73473C169.468 6.31297 169.083 7.46078 168.939 7.79556C169.66 8.60859 170.141 9.61293 170.141 10.8564C170.141 15.2563 167.45 16.2129 164.855 16.4998C165.287 16.8346 165.624 17.552 165.624 18.6041C165.624 20.1345 165.624 21.378 165.624 21.7606C165.624 22.0476 165.816 22.4302 166.44 22.3345C171.006 20.8519 174.321 16.5476 174.321 11.4781C174.321 5.11733 169.18 0 162.788 0Z" fill="#131318"/>
+      </svg>
+     </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!--footer-->
+<footer class="footer p-20 bg-[#131318] text-base-content">
+    <aside>
+    <h3 class="text-2xl text-white font-extrabold">Get In Touch</h3>
+    <p class="font-medium text-[#FFFFFF99] py-3">ACME Industries Ltd.<br>Providing reliable tech since 1992</p>
+    <p class="flex justify-evenly"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M21.75 6.75V17.25C21.75 17.8467 21.5129 18.419 21.091 18.841C20.669 19.2629 20.0967 19.5 19.5 19.5H4.5C3.90326 19.5 3.33097 19.2629 2.90901 18.841C2.48705 18.419 2.25 17.8467 2.25 17.25V6.75M21.75 6.75C21.75 6.15326 21.5129 5.58097 21.091 5.15901C20.669 4.73705 20.0967 4.5 19.5 4.5H4.5C3.90326 4.5 3.33097 4.73705 2.90901 5.15901C2.48705 5.58097 2.25 6.15326 2.25 6.75M21.75 6.75V6.993C21.75 7.37715 21.6517 7.75491 21.4644 8.0903C21.2771 8.42569 21.0071 8.70754 20.68 8.909L13.18 13.524C12.8252 13.7425 12.4167 13.8582 12 13.8582C11.5833 13.8582 11.1748 13.7425 10.82 13.524L3.32 8.91C2.99292 8.70854 2.72287 8.42669 2.53557 8.0913C2.34827 7.75591 2.24996 7.37815 2.25 6.994V6.75" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg><span class="font-medium pl-3 text-[#FFFFFF99]">hockeys@support.com</span></p>
+    <p class="flex justify-evenly"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M2.25 6.75C2.25 15.034 8.966 21.75 17.25 21.75H19.5C20.0967 21.75 20.669 21.5129 21.091 21.091C21.5129 20.669 21.75 20.0967 21.75 19.5V18.128C21.75 17.612 21.399 17.162 20.898 17.037L16.475 15.931C16.035 15.821 15.573 15.986 15.302 16.348L14.332 17.641C14.05 18.017 13.563 18.183 13.122 18.021C11.4849 17.4191 9.99815 16.4686 8.76478 15.2352C7.53141 14.0018 6.58087 12.5151 5.979 10.878C5.817 10.437 5.983 9.95 6.359 9.668L7.652 8.698C8.015 8.427 8.179 7.964 8.069 7.525L6.963 3.102C6.90214 2.85869 6.76172 2.6427 6.56405 2.48834C6.36638 2.33397 6.1228 2.25008 5.872 2.25H4.5C3.90326 2.25 3.33097 2.48705 2.90901 2.90901C2.48705 3.33097 2.25 3.90326 2.25 4.5V6.75Z" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg><span class="pl-3 font-medium text-[#FFFFFF99]">(+62) 123-321-543</span></p>
+    </aside> 
+    <nav>
+      <h6 class="footer-title text-white font-bold">Services</h6> 
+      <a class="link link-hover font-medium text-[#FFFFFF99]">Branding</a>
+      <a class="link link-hover font-medium text-[#FFFFFF99]">Design</a>
+      <a class="link link-hover font-medium text-[#FFFFFF99]">Marketing</a>
+      <a class="link link-hover font-medium text-[#FFFFFF99]">Advertisement</a>
+      <a class="link link-hover font-medium text-[#FFFFFF99]"> Legal Notice</a>
+    </nav> 
+    <nav>
+      <h6 class="footer-title  text-white font-bold">Company</h6> 
+      <a class="link link-hover font-medium text-[#FFFFFF99]">About us</a>
+      <a class="link link-hover font-medium text-[#FFFFFF99]">Contact</a>
+      <a class="link link-hover font-medium text-[#FFFFFF99]">Jobs</a>
+      <a class="link link-hover font-medium text-[#FFFFFF99]">Press kit</a>
+    </nav> 
+    <nav>
+      <h6 class="footer-title  text-white font-bold">Legal</h6> 
+      <a class="link link-hover font-medium text-[#FFFFFF99]">Terms of use</a>
+      <a class="link link-hover font-medium text-[#FFFFFF99]">Privacy policy</a>
+      <a class="link link-hover font-medium text-[#FFFFFF99]">Cookie policy</a>
+      <a class="link link-hover font-medium text-[#FFFFFF99]">Hockeys for Adult</a>
+      <a class="link link-hover font-medium text-[#FFFFFF99]">Hockeys for Kids</a>
+    </nav>
+  </footer>
+</body>
+</html>
